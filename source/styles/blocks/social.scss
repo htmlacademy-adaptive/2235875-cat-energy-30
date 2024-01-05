@@ -1,3 +1,17 @@
+.social {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid $border-hover-color;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+}
+
 .social__link {
   display: inline-block;
   width: 28px;
@@ -33,10 +47,10 @@
 }
 
 .social__link:hover::before {
-  background-color: $basic-green;
+  background-color: $primary-color;
 }
 
 .social__link:active::before {
-  background-color: $basic-green;
+  background-color: $primary-color;
   opacity: 0.3;
 }
